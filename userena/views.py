@@ -504,7 +504,7 @@ def profile_edit(request, username, edit_profile_form=EditProfileForm,
 
     if not extra_context: extra_context = dict()
     extra_context['form'] = form
-    extra_context['user'] = user
+    extra_context['account'] = {'user': user}
     return direct_to_template(request,
                               template_name,
                               extra_context=extra_context)
