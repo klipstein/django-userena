@@ -14,7 +14,7 @@ import re, datetime
 SHA1_RE = re.compile('^[a-f0-9]{40}$')
 
 PERMISSIONS = {
-    'profile': ('view_profile', 'change_profile'),
+    'profile': ('view_profile',),
     'user': ('change_user', 'delete_user')
 }
 
